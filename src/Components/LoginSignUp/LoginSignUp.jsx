@@ -30,18 +30,18 @@ const LoginSignUp = () => {
                 </div>
                 <div className="input">
                     <img src={password_icon} alt="" />
-                    <input type="password" placeholder='Password'/>
+                    <input type="password" placeholder='Senha'/>
                 </div>
             </div>
-            {action === "Sign Up" ? <div></div> : <div className="forgot-password">
-                Forgot Password? <span>Click Here!</span>
+            {action === "Cadastrar" ? <div></div> : <div className="forgot-password">
+                Esqueceu sua senha? <span>Clique aqui!</span>
             </div>}
             
             <div className="submit-container">
-                <div className={action === "Login" ? "submit gray" : "submit"} onClick={() => {setAction("Sign Up")}}>
-                    Sign Up
+                <div className={action === "Login" ? "submit gray" : "submit"} onClick={() => {setAction("Cadastrar")}}>
+                    Cadastrar
                 </div>
-                <div className={action === "Sign Up" ? "submit gray" : "submit"} onClick={() => {setAction("Login")}}>
+                <div className={action === "Cadastrar" ? "submit gray" : "submit"} onClick={() => {setAction("Login")}}>
                     Login
                 </div>
             </div>
